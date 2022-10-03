@@ -12,11 +12,9 @@
  }
  
  body {
-   font-size: Roboto, sana-serif;
-   font-weight: 400;
+   font-family: Roboto, sana-serif;
    font-size: 14px;
    line-height: 1.2;
-   letter-spacing: 0.03em;
 
    background-color: var(--hero-title-color);
    color: var(--text-color)
@@ -58,11 +56,12 @@ cursor: pointer;
 
 .nav-link,
 .contacts {
-   letter-spacing: 0,02em;
+   letter-spacing: 0.02em;
 }
 
 .nav-link {
    color: var(--title-color) ;
+   text-decoration: none;
 }
 
 .current,
@@ -76,10 +75,20 @@ cursor: pointer;
 }
 
 .features-title,
-.section-title,
 .work-title {
    font-weight: 700;
    color: var(--title-color);
+   text-transform: uppercase
+}
+
+.section-title {
+   font-weight: 00;
+   color: var(--title-color);
+   
+}
+
+.section-table {
+   background-color: var(--hero-title-color)
 }
 
 .contacts {
@@ -113,16 +122,17 @@ cursor: pointer;
    font-weight: 700;
    font-size: 16px;
    line-height: 1.9;
+   color: var(--hero-title-color);
 
    background-color: var(--accent-color);
 }
 
 .section-backgroung {
-   background-color: #f5f4fa
+   background-color: var(--team-background-color)
 }
 
 .footer {
-   background-color: #2f303a;
+   background-color: var(--hero-background-color);
 }
 
 .footer-adress {
@@ -131,4 +141,8 @@ cursor: pointer;
 
 .footer-contacts {
    color: rbg(255, 255, 255, 0.6);
+}
+
+.down-adress {
+   font-style: normal;
 }
