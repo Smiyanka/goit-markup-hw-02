@@ -1,0 +1,148 @@
+ :root {
+    --text-color: #757575;
+    --title-color: #212121;
+    --accent-color: #2196f3;
+    --hero-title-color: #ffffff;
+    --hero-background-color: #2f303a;
+    --team-background-color: #f5f4fa;
+    --logo-black-color: #000000;
+    --logo-light-color: #ffffff;
+    /*--footer-background-color: #2f303a; */
+    --footer-email-tel: rbg(255, 255, 255, 0.6);
+ }
+ 
+ body {
+   font-family: Roboto, sana-serif;
+   font-size: 14px;
+   line-height: 1.2;
+
+   background-color: var(--hero-title-color);
+   color: var(--text-color)
+ }
+
+.list {
+   list-style: none;
+}
+
+.link {
+   text-decoration: none;
+}
+
+a,
+button {
+cursor: pointer;
+}
+
+/* site navigation */
+
+.nav {
+   font-weight: 500;
+}
+
+.logo {
+   font-family: Raleway;
+   font-weight: 700;
+   font-size: 26px;
+   color: var(--accent-color);
+}
+
+.logo-dark {
+   color: var(--logo-black-color);
+}
+
+.logo-light {
+   color: var(--logo-light-color);
+}
+
+.nav-link,
+.contacts {
+   letter-spacing: 0.02em;
+}
+
+.nav-link {
+   color: var(--title-color) ;
+   text-decoration: none;
+}
+
+.current,
+.nav-link:hover,
+.nav-link:focus,
+.contacts:hover,
+.contacts:focus,
+.footer-contacts:hover,
+.footer-contacts:focus {
+   color: var(--accent-color);
+}
+
+.features-title,
+.work-title {
+   font-weight: 700;
+   color: var(--title-color);
+   text-transform: uppercase
+}
+
+.section-title {
+   font-weight: 00;
+   color: var(--title-color);
+   
+}
+
+.section-table {
+   background-color: var(--hero-title-color)
+}
+
+.contacts {
+   font-weight: 500;
+
+   color: inherit;
+}
+
+.button-link:hover,
+.button-link:focus {
+   color: var(--hero-title-color);
+   background-color: var(--accent-color);
+}
+
+/* Hero */
+
+.hero {
+   background-color: var(--hero-background-color);
+}
+
+.hero-title {
+   font-weight: 900;
+   font-size: 44px;
+   line-height: 1.4;
+   text-transform: uppercase;
+   color: var(--hero-title-color);
+}
+
+.hero-button {
+   font-family: inherit;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 1.9;
+   color: var(--hero-title-color);
+
+   background-color: var(--accent-color);
+}
+
+.section-backgroung {
+   background-color: var(--team-background-color)
+}
+
+.footer {
+   background-color: var(--hero-background-color);
+}
+
+.footer-adress {
+   color: var(--hero-title-color);
+}
+
+.footer-contacts {
+   color: rbg(255, 255, 255, 0.6);
+}
+
+.down-adress {
+   font-style: normal;
+}
