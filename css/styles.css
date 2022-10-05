@@ -50,9 +50,7 @@ cursor: pointer;
    color: var(--logo-black-color);
 }
 
-.logo-light {
-   color: var(--logo-light-color);
-}
+
 
 .nav-link,
 .contacts {
@@ -203,4 +201,8 @@ color: var(--logo-black-color);
 
 .down-adress {
    font-style: normal;
+}
+
+.logo-light {
+   color: var(--logo-light-color);
 }
