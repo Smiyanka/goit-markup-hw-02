@@ -36,12 +36,8 @@ cursor: pointer;
 
 /* site navigation */
 
-.nav {
-   font-weight: 500;
-}
-
 .logo {
-   font-family: Raleway;
+   font-family: Raleway, sana-serif;;
    font-weight: 700;
    font-size: 26px;
    color: var(--accent-color);
@@ -51,16 +47,14 @@ cursor: pointer;
    color: var(--logo-black-color);
 }
 
-
-
 .nav-link,
 .contacts {
    letter-spacing: 0.02em;
+   
 }
 
 .nav-link {
-   font-family: Roboto;
-   font-style: Medium;
+   font-weight: 500;
    font-size: 14px; 
    line-height: 1.14;
    color: var(--title-color) ;
@@ -82,41 +76,34 @@ cursor: pointer;
    font-size: 14px;
    line-height: 1.17;
    color: var(--title-color);
+   text-transform: uppercase;
 }
 
 .portfolio-title {
-   font-family: Roboto; 
-   font-style: Bold; 
+   font-weight: 700;
    font-size: 18px; 
    line-height: 2;
    color: var(--logo-black-color);
 }
 
 .features-text { 
-   font-family: Roboto; 
-   font-style: Regular;
    font-size: 14px;
    line-height: 1.71;
 }
 
 .portfolio-text {
    color: var(--text-color);
-   font-family: Roboto ;
-   font-weight: 400;
    font-size: 16px 
    line-height: 1.88;
    
 }
 
 .team-text {
-   font-family: Roboto;
-   font-style: Regular;
    font-size: 16px;
    line-height: 1.9;
 }
 
 .section-title {
-   font-family: Roboto; 
    font-size: 36px;
    font-style: bold;
    line-height: 1.17;
@@ -126,7 +113,6 @@ cursor: pointer;
 }
 
 .team-title {
-font-family: Roboto;
 font-style: medium;
 font-size: 16px;
 line-height: 1.9;
@@ -143,18 +129,17 @@ color: var(--logo-black-color);
    color: inherit;
 }
 
-.button-filter:hover,
-.button-filter:focus {
+.button-filter:focus,
+.button-filter:hover {
    color: var(--hero-title-color);
    background-color: var(--accent-color);
 }
 
 .button-filter {
    font-family: Roboto;
-   font-style: normal;
    font-weight: 500;
    font-size: 14px;
-   line-height: 1,14;
+   line-height: 1.14;
    letter-spacing: 0.02em;
    
    color: var(--title-color);
