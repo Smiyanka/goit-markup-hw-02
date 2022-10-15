@@ -25,13 +25,23 @@ html {
    color: var(--text-color)
  }
 
+.img {
+   display: block;
+}
+
 .list {
-   display: flex;
    list-style: none;
+   padding: 0;
+   margin: 0;
 }
 
 .list-footer{
+
 list-style: none;
+}
+
+.list-footer:not(:last child) {
+   margin-bottom: 9px;
 }
 
 .link {
@@ -56,8 +66,21 @@ cursor: pointer;
  }
 
 .section-buttons {
+   display: flex;
+   gap: 8px;
    justify-content: center;
-}
+   flex-wrap: wrap;
+
+   margin-top: -30px;
+   margin-top: -30px;
+   }
+
+
+   .section-buttons>.client-item {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+    }
 
 /* site navigation */
 
@@ -85,14 +108,29 @@ cursor: pointer;
 
 .nav-link {
    display: block;
-   margin-right: 50px;
+   justify-content: space-between;
 
    font-weight: 500;
    font-size: 14px; 
    line-height: 1.14;
    color: var(--title-color) ;
    text-decoration: none;
+   padding: 32px 0;
+   display: block;
    
+}
+
+.contact-nav {
+   display: flex;
+   gap: 50px;
+   padding-top: 32px;
+   margin-left: auto;
+
+}
+
+.header-box {
+   display: flex;
+   border-bottom: 1px;
 }
 
 .main-nav {
@@ -100,18 +138,35 @@ cursor: pointer;
    align-items: center;
 }
 
- .item: last-child {
+ .item:last-child {
    margin-right: 0;
 }
 
 .header-nav {
+   display: flex;
    margin-left: 93px;
+   gap: 50px;
+}
+.list-item {
+width: 270px;
+padding: 30px;
+margin-top: 0;
+margin-top: 94px;
 }
 
 .list-item:not(:last child) {
    margin-right: 30px;
 }
 
+.specifics {
+display: flex;
+margin-right: 30px;
+}
+
+.workers-list {
+   display: flex;
+   gap: 30px;
+}
 .current,
 .nav-link:hover,
 .nav-link:focus,
@@ -144,7 +199,7 @@ cursor: pointer;
 
 .portfolio-text {
    color: var(--text-color);
-   font-size: 16px 
+   font-size: 16px;
    line-height: 1.88;
    
 }
@@ -158,6 +213,8 @@ cursor: pointer;
 
 .section-title {
    text-align: center;
+   margin-top: 50px;
+   margin-bottom: 0;
 
    font-size: 36px;
    line-height: 1.17;
@@ -177,12 +234,13 @@ color: var(--logo-black-color);
 }
 
 .section-table {
-   background-color: var(--hero-title-color)
+   background-color: var(--hero-title-color);
+   padding: 30px;
+   margin-top: 0;
 }
 
 .contacts {
    display:flex;
-   margin-right: 50px;
    font-weight: 500;
 
    color: inherit;
@@ -196,8 +254,7 @@ color: var(--logo-black-color);
 
 .button-filter {
    display: flex;
-   margin-left: 8px;
-   x
+   padding: 6px 22px ;
 
    font-family: inherit;
    font-weight: 500;
@@ -208,31 +265,60 @@ color: var(--logo-black-color);
    color: var(--title-color);
 }
 
+.container-main {
+   width: 1200px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+
 .container {
-max-width: 1200px;
+width: 1200px;
 margin: 0 auto;
 padding: 15px 94px;
 }
 
+.features-section {
+   padding-top: 94px;
+   padding-bottom: 94px;
+}
+
+.features-list {
+   display: flex;
+   margin-top: 0;
+   margin-bottom: 0;
+   gap: 30px;
+
+}
+
+.features-top {
+   visibility: hidden;
+}
+
+.portfolio {
+   visibility: hidden;
+}
+
+ .section-buttons > .client-item {
+
+ }
 
 /* Hero */
 
 .hero {
+   padding-top: 200px;
+   padding-bottom: 200px;
+
    background-color: var(--hero-background-color);
 }
 
-.container-hero {
-   max-width: 1600px;
-   height: 600px;
-
-}
-
 .hero-title {
-   margin-left: 452px;
-   margin-right: 452px;
+   margin-left: auto;
+   margin-right: auto;
    text-align: center;
-   padding-top: 200px;
    margin-bottom: 30px;
+   margin-top: 0;
+   width: 700px;
 
 
    font-weight: 900;
@@ -243,10 +329,10 @@ padding: 15px 94px;
 }
 
 .hero-button {
+   display: block;
    border-radius: 4px;
-   margin-left: 692px;
-   margin-right: 692px;
-   margin-bottom: 200px;
+   margin-left: auto;
+   margin-right: auto;
    height: 50px;
    width: 216px;
 
@@ -266,7 +352,11 @@ padding: 15px 94px;
 }
 
 .section-backgroung {
-   background-color: var(--team-background-color)
+   background-color: var(--team-background-color);
+   padding-top: 94px;
+   padding-bottom: 94px;
+   margin-top: 0;
+
 }
 
 /* footer */
@@ -275,7 +365,7 @@ padding: 15px 94px;
    background-color: var(--hero-background-color);
 }
 
-.footer-adress {button-filter
+.footer-adress { 
    color: var(--hero-title-color);
 }
 
@@ -285,6 +375,7 @@ padding: 15px 94px;
 
 .down-adress {
    font-style: normal;
+   margin-top: 18px;
 }
 
 .logo-light {
