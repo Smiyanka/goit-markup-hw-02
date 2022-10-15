@@ -20,7 +20,8 @@
   <body>
     <!--шапка сайту-->
     <header>
-      <nav class="container main-nav">
+      <div class="container-main header-box">
+      <nav class="main-nav">
         <a href="./index.html" class="logo link">Web<span class="logo-dark">Studio</span></a>
         <ul class="list header-nav">
           <li class="item">
@@ -33,6 +34,7 @@
             <a class="nav-link" href="">Котакти</a>
           </li>
         </ul>
+        </nav>
         <ul class="list contact-nav">
           <li>
             <a class="contacts link" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -41,21 +43,21 @@
             <a class="contacts link" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
-      </nav>
+      </div>
     </header>
     <main>
       <!--герой-->
       <section class="hero">
-        <div class="container-hero">
+        <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="hero-button">Замовити послугу</button>
         </div>
       </section>
       <!--Особливості-->
-      <section>
+      <section class="features-section">
         <div class="container">
-          <h2 class="section-title">Особливості</h2>
-          <ul class="list">
+          <h2 class="section-title features-top">Особливості</h2>
+          <ul class="list features-list">
             <li class="list-item">
               <h3 class="features-title">Увага до деталей</h3>
               <p class="features-text">
@@ -87,7 +89,7 @@
       <section>
         <div class="container">
           <h2 class="section-title">Чим ми займаємось</h2>
-          <ul class="list">
+          <ul class="list specifics">
             <li class="list-item">
               <img
                 src="./images/box1.png"
@@ -119,9 +121,9 @@
       <section class="section-backgroung">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
-          <ul class="list">
+          <ul class="list workers-list">
             <li class="list-item">
-              <img src="./images/ihor.jpg" alt="Фото Ігора Демяненако" width="270" height="260" />
+              <img  src="./images/ihor.jpg" alt="Фото Ігора Демяненако" width="270" height="260" />
               <div class="section-table">
                 <h3 class="team-title">Ігор Дем'яненко</h3>
                 <p class="team-text">Product Designer</p>
