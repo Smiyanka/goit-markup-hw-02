@@ -66,6 +66,10 @@ cursor: pointer;
    gap: 30px;
  }
 
+.client-portfolio {
+   padding: 22px 24px;
+}
+
 .section-buttons {
    display: flex;
    gap: 8px;
